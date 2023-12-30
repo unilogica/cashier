@@ -1,6 +1,6 @@
 <?php
 
-namespace Acelle\Cashier\Http\Controllers;
+namespace Unilogica\Cashier\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;
