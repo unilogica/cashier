@@ -56,12 +56,12 @@ class OfflinePaymentGateway implements PaymentGatewayInterface
 
     public function getSettingsUrl() : string
     {
-        return action("\Acelle\Cashier\Controllers\OfflineController@settings");
+        return action("\Unilogica\Cashier\Controllers\OfflineController@settings");
     }
 
     public function getCheckoutUrl($invoice) : string
     {
-        return action("\Acelle\Cashier\Controllers\OfflineController@checkout", [
+        return action("\Unilogica\Cashier\Controllers\OfflineController@checkout", [
             'invoice_uid' => $invoice->uid,
         ]);
     }

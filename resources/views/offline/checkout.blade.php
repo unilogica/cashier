@@ -28,7 +28,7 @@
                     
                 <div class="d-flex align-items-center">
                     <form method="POST"
-                        action="{{ \Acelle\Cashier\Cashier::lr_action('\Acelle\Cashier\Controllers\OfflineController@claim', [
+                        action="{{ \Unilogica\Cashier\Cashier::lr_action('\Unilogica\Cashier\Controllers\OfflineController@claim', [
                             'invoice_uid' => $invoice->uid
                         ]) }}"
                     >

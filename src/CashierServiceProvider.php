@@ -31,7 +31,7 @@ class CashierServiceProvider extends ServiceProvider
 
         // assets
         $this->publishes([
-            __DIR__.'/../assets' => public_path('vendor/acelle-cashier'),
+            __DIR__.'/../assets' => public_path('vendor/unilogica-cashier'),
         ], 'public');
 
         Hook::register('add_translation_file', function() {

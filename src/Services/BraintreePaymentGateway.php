@@ -63,7 +63,7 @@ class BraintreePaymentGateway implements PaymentGatewayInterface
 
     public function getSettingsUrl() : string
     {
-        return action("\Acelle\Cashier\Controllers\BraintreeController@settings");
+        return action("\Unilogica\Cashier\Controllers\BraintreeController@settings");
     }
 
     public function validate()
@@ -269,7 +269,7 @@ class BraintreePaymentGateway implements PaymentGatewayInterface
      */
     public function getCheckoutUrl($invoice) : string
     {
-        return \Acelle\Cashier\Cashier::lr_action("\Acelle\Cashier\Controllers\BraintreeController@checkout", [
+        return \Unilogica\Cashier\Cashier::lr_action("\Unilogica\Cashier\Controllers\BraintreeController@checkout", [
             'invoice_uid' => $invoice->uid,
         ]);
     }
@@ -286,7 +286,7 @@ class BraintreePaymentGateway implements PaymentGatewayInterface
      */
     public function getAutoBillingDataUpdateUrl($returnUrl='/') : string
     {
-        return \Acelle\Cashier\Cashier::lr_action("\Acelle\Cashier\Controllers\BraintreeController@autoBillingDataUpdate", [
+        return \Unilogica\Cashier\Cashier::lr_action("\Unilogica\Cashier\Controllers\BraintreeController@autoBillingDataUpdate", [
             'return_url' => $returnUrl,
         ]);
     }

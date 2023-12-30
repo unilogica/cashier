@@ -76,12 +76,12 @@ class PaypalPaymentGateway implements PaymentGatewayInterface
 
     public function getSettingsUrl() : string
     {
-        return action("\Acelle\Cashier\Controllers\PaypalController@settings");
+        return action("\Unilogica\Cashier\Controllers\PaypalController@settings");
     }
 
     public function getCheckoutUrl($invoice) : string
     {
-        return action("\Acelle\Cashier\Controllers\PaypalController@checkout", [
+        return action("\Unilogica\Cashier\Controllers\PaypalController@checkout", [
             'invoice_uid' => $invoice->uid,
         ]);
     }

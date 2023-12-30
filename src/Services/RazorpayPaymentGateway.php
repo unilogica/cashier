@@ -67,12 +67,12 @@ class RazorpayPaymentGateway implements PaymentGatewayInterface
 
     public function getSettingsUrl() : string
     {
-        return action("\Acelle\Cashier\Controllers\RazorpayController@settings");
+        return action("\Unilogica\Cashier\Controllers\RazorpayController@settings");
     }
 
     public function getCheckoutUrl($invoice) : string
     {
-        return action("\Acelle\Cashier\Controllers\RazorpayController@checkout", [
+        return action("\Unilogica\Cashier\Controllers\RazorpayController@checkout", [
             'invoice_uid' => $invoice->uid,
         ]);
     }

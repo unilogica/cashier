@@ -52,7 +52,7 @@ class PaystackPaymentGateway implements PaymentGatewayInterface
 
     public function getSettingsUrl() : string
     {
-        return action("\Acelle\Cashier\Controllers\PaystackController@settings");
+        return action("\Unilogica\Cashier\Controllers\PaystackController@settings");
     }
 
     public function validate()
@@ -101,7 +101,7 @@ class PaystackPaymentGateway implements PaymentGatewayInterface
      */
     public function getAutoBillingDataUpdateUrl($returnUrl='/') : string
     {
-        return \Acelle\Cashier\Cashier::lr_action("\Acelle\Cashier\Controllers\PaystackController@autoBillingDataUpdate", [
+        return \Unilogica\Cashier\Cashier::lr_action("\Unilogica\Cashier\Controllers\PaystackController@autoBillingDataUpdate", [
             'return_url' => $returnUrl,
         ]);
     }
@@ -113,7 +113,7 @@ class PaystackPaymentGateway implements PaymentGatewayInterface
      */
     public function getCheckoutUrl($invoice) : string
     {
-        return \Acelle\Cashier\Cashier::lr_action("\Acelle\Cashier\Controllers\PaystackController@checkout", [
+        return \Unilogica\Cashier\Cashier::lr_action("\Unilogica\Cashier\Controllers\PaystackController@checkout", [
             'invoice_uid' => $invoice->uid,
         ]);
     }

@@ -73,12 +73,12 @@ class CoinpaymentsPaymentGateway implements PaymentGatewayInterface
 
     public function getSettingsUrl() : string
     {
-        return action("\Acelle\Cashier\Controllers\CoinpaymentsController@settings");
+        return action("\Unilogica\Cashier\Controllers\CoinpaymentsController@settings");
     }
 
     public function getCheckoutUrl($invoice) : string
     {
-        return action("\Acelle\Cashier\Controllers\CoinpaymentsController@checkout", [
+        return action("\Unilogica\Cashier\Controllers\CoinpaymentsController@checkout", [
             'invoice_uid' => $invoice->uid,
         ]);
     }

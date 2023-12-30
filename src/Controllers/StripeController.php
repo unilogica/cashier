@@ -63,7 +63,7 @@ class StripeController extends Controller
 
     public function getCheckoutUrl($invoice)
     {
-        return action("\Acelle\Cashier\Controllers\StripeController@checkout", [
+        return action("\Unilogica\Cashier\Controllers\StripeController@checkout", [
             'invoice_uid' => $invoice->uid,
         ]);
     }
