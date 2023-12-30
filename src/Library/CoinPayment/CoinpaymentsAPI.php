@@ -19,9 +19,9 @@
  * manipulate.
  */
 
-namespace Acelle\Cashier\Library\CoinPayment;
+namespace Unilogica\Cashier\Library\CoinPayment;
 
-use Acelle\Cashier\Library\CoinPayment\CoinpaymentsCurlRequest;
+use Unilogica\Cashier\Library\CoinPayment\CoinpaymentsCurlRequest;
 use Exception;
 
 class CoinpaymentsAPI
