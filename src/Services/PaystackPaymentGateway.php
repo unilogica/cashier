@@ -1,15 +1,15 @@
 <?php
 
-namespace Acelle\Cashier\Services;
+namespace Unilogica\Cashier\Services;
 
 use Illuminate\Support\Facades\Log;
-use Acelle\Library\Contracts\PaymentGatewayInterface;
+use Unilogica\Library\Contracts\PaymentGatewayInterface;
 use Carbon\Carbon;
-use Acelle\Cashier\Cashier;
-use Acelle\Library\AutoBillingData;
-use Acelle\Model\Invoice;
-use Acelle\Library\TransactionResult;
-use Acelle\Model\Transaction;
+use Unilogica\Cashier\Cashier;
+use Unilogica\Library\AutoBillingData;
+use Unilogica\Model\Invoice;
+use Unilogica\Library\TransactionResult;
+use Unilogica\Model\Transaction;
 
 class PaystackPaymentGateway implements PaymentGatewayInterface
 {
