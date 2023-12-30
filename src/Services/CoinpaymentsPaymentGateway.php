@@ -1,13 +1,13 @@
 <?php
-namespace Acelle\Cashier\Services;
+namespace Unilogica\Cashier\Services;
 
-use Acelle\Library\Contracts\PaymentGatewayInterface;
+use Unilogica\Library\Contracts\PaymentGatewayInterface;
 use Carbon\Carbon;
-use Acelle\Cashier\Cashier;
-use Acelle\Cashier\Library\CoinPayment\CoinpaymentsAPI;
-use Acelle\Model\Invoice;
-use Acelle\Library\TransactionResult;
-use Acelle\Model\Transaction;
+use Unilogica\Cashier\Cashier;
+use Unilogica\Cashier\Library\CoinPayment\CoinpaymentsAPI;
+use Unilogica\Model\Invoice;
+use Unilogica\Library\TransactionResult;
+use Unilogica\Model\Transaction;
 
 class CoinpaymentsPaymentGateway implements PaymentGatewayInterface
 {
