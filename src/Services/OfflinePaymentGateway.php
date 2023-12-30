@@ -1,10 +1,10 @@
 <?php
 
-namespace Acelle\Cashier\Services;
+namespace Unilogica\Cashier\Services;
 
-use Acelle\Library\Contracts\PaymentGatewayInterface;
-use Acelle\Library\TransactionResult;
-use Acelle\Model\Transaction;
+use Unilogica\Library\Contracts\PaymentGatewayInterface;
+use Unilogica\Library\TransactionResult;
+use Unilogica\Model\Transaction;
 
 class OfflinePaymentGateway implements PaymentGatewayInterface
 {
