@@ -1,9 +1,9 @@
 <?php
 
-namespace Acelle\Cashier;
+namespace Unilogica\Cashier;
 
 use Illuminate\Support\ServiceProvider;
-use Acelle\Library\Facades\Hook;
+use Unilogica\Library\Facades\Hook;
 
 class CashierServiceProvider extends ServiceProvider
 {
