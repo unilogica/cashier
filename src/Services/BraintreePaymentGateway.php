@@ -1,13 +1,13 @@
 <?php
 
-namespace Acelle\Cashier\Services;
+namespace Unilogica\Cashier\Services;
 
-use Acelle\Library\Contracts\PaymentGatewayInterface;
-use Acelle\Cashier\Cashier;
+use Unilogica\Library\Contracts\PaymentGatewayInterface;
+use Unilogica\Cashier\Cashier;
 use Carbon\Carbon;
-use Acelle\Model\Invoice;
-use Acelle\Library\TransactionResult;
-use Acelle\Model\Transaction;
+use Unilogica\Model\Invoice;
+use Unilogica\Library\TransactionResult;
+use Unilogica\Model\Transaction;
 
 class BraintreePaymentGateway implements PaymentGatewayInterface
 {
