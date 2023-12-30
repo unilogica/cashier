@@ -1,18 +1,18 @@
 <?php
 
-namespace Acelle\Cashier\Services;
+namespace Unilogica\Cashier\Services;
 
-use Acelle\Cashier\Cashier;
-use Acelle\Library\Contracts\PaymentGatewayInterface;
+use Unilogica\Cashier\Cashier;
+use Unilogica\Library\Contracts\PaymentGatewayInterface;
 use Carbon\Carbon;
 use Sample\PayPalClient;
 use PayPalCheckoutSdk\Orders\OrdersGetRequest;
 use PayPalCheckoutSdk\Core\PayPalHttpClient;
 use PayPalCheckoutSdk\Core\SandboxEnvironment;
 use PayPalCheckoutSdk\Core\ProductionEnvironment;
-use Acelle\Model\Invoice;
-use Acelle\Library\TransactionResult;
-use Acelle\Model\Transaction;
+use Unilogica\Model\Invoice;
+use Unilogica\Library\TransactionResult;
+use Unilogica\Model\Transaction;
 
 class PaypalPaymentGateway implements PaymentGatewayInterface
 {
