@@ -1,13 +1,13 @@
 <?php
 
-namespace Acelle\Cashier\Controllers;
+namespace Unilogica\Cashier\Controllers;
 
-use Acelle\Http\Controllers\Controller;
+use Unilogica\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Acelle\Model\Setting;
-use Acelle\Library\Facades\Billing;
-use Acelle\Library\TransactionResult;
-use Acelle\Model\Invoice;
+use Unilogica\Model\Setting;
+use Unilogica\Library\Facades\Billing;
+use Unilogica\Library\TransactionResult;
+use Unilogica\Model\Invoice;
 
 class OfflineController extends Controller
 {
