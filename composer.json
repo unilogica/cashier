@@ -1,5 +1,5 @@
 {
-    "name": "acelle/cashier",
+    "name": "unilogica/cashier",
     "description": "Laravel Cashier provides an expressive, fluent interface to Stripe's subscription billing services.",
     "keywords": ["laravel", "stripe", "billing"],
     "license": "MIT",
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Acelle\\Cashier\\": "src/"
+            "Unilogica\\Cashier\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Acelle\\Cashier\\Tests\\": "tests/"
+            "Unilogica\\Cashier\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -37,7 +37,7 @@
         },
         "laravel": {
             "providers": [
-                "Acelle\\Cashier\\CashierServiceProvider"
+                "Unilogica\\Cashier\\CashierServiceProvider"
             ]
         }
     },
