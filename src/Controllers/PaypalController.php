@@ -1,14 +1,14 @@
 <?php
 
-namespace Acelle\Cashier\Controllers;
+namespace Unilogica\Cashier\Controllers;
 
-use Acelle\Http\Controllers\Controller;
+use Unilogica\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Acelle\Cashier\Services\PaypalPaymentGateway;
-use Acelle\Library\Facades\Billing;
-use Acelle\Model\Setting;
-use Acelle\Model\Invoice;
-use Acelle\Library\TransactionResult;
+use Unilogica\Cashier\Services\PaypalPaymentGateway;
+use Unilogica\Library\Facades\Billing;
+use Unilogica\Model\Setting;
+use Unilogica\Model\Invoice;
+use Unilogica\Library\TransactionResult;
 
 class PaypalController extends Controller
 {
