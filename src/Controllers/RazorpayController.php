@@ -1,14 +1,14 @@
 <?php
 
-namespace Acelle\Cashier\Controllers;
+namespace Unilogica\Cashier\Controllers;
 
-use Acelle\Http\Controllers\Controller;
+use Unilogica\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Acelle\Library\Facades\Billing;
-use Acelle\Model\Setting;
-use Acelle\Model\Invoice;
-use Acelle\Library\TransactionResult;
-use Acelle\Cashier\Services\RazorpayPaymentGateway;
+use Unilogica\Library\Facades\Billing;
+use AceUnilogicalle\Model\Setting;
+use Unilogica\Model\Invoice;
+use Unilogica\Library\TransactionResult;
+use Unilogica\Cashier\Services\RazorpayPaymentGateway;
 
 class RazorpayController extends Controller
 {
